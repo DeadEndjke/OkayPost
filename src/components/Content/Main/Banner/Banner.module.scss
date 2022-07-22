@@ -11,7 +11,7 @@
       "paragraph photo photo"
       "button photo photo";
 
-   
+    
 
     }
 
@@ -87,7 +87,7 @@
   
   @media screen and (max-width:810px) {
   .banner { 
-    margin-top: 196px; 
+    margin-top: 156px; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -127,16 +127,17 @@
 }
 @media screen and (max-width:585px) {
     .banner{
-        margin-top: 250px;
+        margin-top: 80px;
         align-items: baseline;
         .heading{
-            font-size: 30px;
+            font-size: 27px;
             font-weight: 800;
         }
 
         .paragraph{
             font-weight: 300;
-        font-size: 14px;
+        font-size: 18px;
+        padding-right: 15px;
         }
     }
     

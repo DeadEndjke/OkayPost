@@ -1,4 +1,5 @@
 .main{
+    margin-bottom: 500px;
     .backgroundcontainer{
         max-width: 1800px;
         width: 100%;
@@ -11,13 +12,22 @@
             border-radius: 36px;
         }
         .maincontainer{
-            position: relative;
-            top: -800px;
+            position: absolute;
+            top: 100px;
+            
+            // left: 280px;
             z-index: 1;
             width: 100%;
             max-width: 1360px;
             margin: 0 auto;
             padding: 0 20px;  
+            left: calc((100vw - 1400px)/2);
+        }
+
+        @media screen and (max-width:1400px) {
+            .maincontainer{
+            left: 20px;
+            }
         }
 
         @media screen and(max-width:810px) {
