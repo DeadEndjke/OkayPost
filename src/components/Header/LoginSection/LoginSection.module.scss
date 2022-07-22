@@ -9,7 +9,7 @@
         font-size: 15px;
         line-height: 16px;
         color: #1F2428;
-        margin-right: 42px;
+        margin-right: 18px;
         align-items: center;
         .entertext{
             margin-left: 11px;
@@ -33,13 +33,20 @@
    
 }
 
+@media screen and (max-width:1400px) {
+    .loginsection{
+        margin-right: 5vw;
+    }
+    
+}
+
 
 @media screen and(max-width:600px) {
     .followbtn{
         display: none;
     }
     .enter{
-        display: none;
+        margin-right: 10px;
     }
 
     .entertext{

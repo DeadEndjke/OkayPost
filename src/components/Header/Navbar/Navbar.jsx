@@ -1,16 +1,17 @@
 import s from './Navbar.module.scss'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <div className={s.navbar}>
             <ul>
-                <li>Как покупать</li>
-                <li>Распродажи</li>
-                <li>Цены</li>
-                <li>Помощь</li>
-                <li>Бонусы</li>
-                <li>Блог</li>
-                <li>Магазины</li>
+                <NavLink to={'/howtopay'} ><li>Как покупать</li></NavLink>
+                <NavLink to={'/sale'} >  <li>Распродажи</li></NavLink>
+                <NavLink to={'/prices'} > <li>Цены</li></NavLink>
+                <NavLink to={'/help'} ><li>Помощь</li></NavLink>
+                <NavLink to={'/bonus'} > <li>Бонусы</li></NavLink>
+                <NavLink to={'/blog'} > <li>Блог</li></NavLink>
+                <NavLink to={'/shops'} > <li>Магазины</li></NavLink>
             </ul>
         </div>
     );
