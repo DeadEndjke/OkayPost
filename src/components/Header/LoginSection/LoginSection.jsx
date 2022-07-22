@@ -7,10 +7,10 @@ const LoginSection = () => {
 
     return (
         <div className={s.loginsection}>
-            <div className={s.enter}>
+            <NavLink to={'/user'} >   <div className={s.enter}>
                 <SvgSelector id='user' />
                 <div className={s.entertext}>Вход</div>
-            </div>
+            </div></NavLink>
             <div className={s.followbtn}>
                 <NavLink to={'/contactus'} >  <button className={s.follow}>Связаться с нами</button></NavLink>
             </div>
