@@ -1,0 +1,144 @@
+.banner { 
+    margin-top: 96px;
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr; 
+    grid-template-rows: 66% 23% 10%;
+
+    gap: 8px 8px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+      "heading photo photo"
+      "paragraph photo photo"
+      "button photo photo";
+
+   
+
+    }
+
+        .heading {
+            position: relative;
+            z-index: 10;
+            grid-area: heading; 
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 80px;
+            color: #FFFFFF;
+            }
+  
+        .paragraph { 
+            grid-area: paragraph; 
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+  
+        .button {
+            grid-area: button; 
+           
+            
+            button{
+                padding: 20px;
+                color: #FFFFFF;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 18px;
+                border: none;
+                background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
+                box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+                border-radius: 36px;
+                width: 260px;
+            }
+            
+        }
+  
+        .photo {
+            grid-area: photo;
+            img{max-width: 100%;
+                height: auto;}
+        }
+
+        @media screen and (max-width:1200px) {
+            .heading{
+                font-size: 60px;
+                font-weight: 700;
+            }
+
+            .paragraph{
+                font-size: 16px;
+                line-height: 20px;
+            }
+            button{
+                font-size: 13px;
+            }
+            
+        }
+     
+
+
+        @media screen and (max-width:810px) {
+          .photo{display: none;}
+        }
+
+    
+
+        
+    
+  
+  @media screen and (max-width:810px) {
+  .banner { 
+    margin-top: 196px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "heading heading heading"
+      "paragraph paragraph paragraph"
+      "button button button";
+      align-items: baseline;
+
+      .heading {
+        position: relative;
+        z-index: 10;
+        grid-area: heading; 
+        font-weight: 800;
+        font-size: 52px;
+        line-height: 60px;
+        color: #FFFFFF;
+        }
+    
+    .paragraph { 
+        grid-area: paragraph; 
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+      
+      .button { 
+        grid-area: button; 
+    }
+  }
+  
+  
+  
+}
+@media screen and (max-width:585px) {
+    .banner{
+        margin-top: 250px;
+        align-items: baseline;
+        .heading{
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .paragraph{
+            font-weight: 300;
+        font-size: 14px;
+        }
+    }
+    
+}
+ 

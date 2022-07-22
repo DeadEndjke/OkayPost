@@ -39,6 +39,7 @@ export function SvgSelector({ id }) {
                 )
             }
 
+
             default:
                 return null;
         }

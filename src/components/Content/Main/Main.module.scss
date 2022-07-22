@@ -1,0 +1,38 @@
+.main{
+    .backgroundcontainer{
+        max-width: 1800px;
+        width: 100%;
+        margin: 0 auto;
+        .background{
+            position: relative;
+            z-index: -1;
+            height: 800px;
+            background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+            border-radius: 36px;
+        }
+        .maincontainer{
+            position: relative;
+            top: -800px;
+            z-index: 1;
+            width: 100%;
+            max-width: 1360px;
+            margin: 0 auto;
+            padding: 0 20px;  
+        }
+
+        @media screen and(max-width:810px) {
+            .background{
+                height: 700px;
+            }
+        }
+
+        
+        @media screen and(max-width:585px) {
+            .background{
+                height: 600px;
+            }
+        }
+    }
+    
+    
+}

@@ -8,7 +8,7 @@ export const StyledMenu = styled.nav`
   width: 370px;
   position: fixed;
   background-color: ${colors.black};
-  z-index: 1;
+  z-index: 20;
 
   display: flex;
   flex-direction: column;

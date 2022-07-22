@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { colors } from "./../global";
 
 export const StyledHamburger = styled.button`
-  position: fixed;
-  right: ${({ open }) => (open ? "300px" : "initial")};
-  top: 47px;
+  position: relative;
+  right: ${({ open }) => (open ? "265px" : "initial")};
+  top: 0px;
   width: 2rem;
   height: 2rem;
   padding: 0;
@@ -18,7 +18,7 @@ export const StyledHamburger = styled.button`
   border: none;
   cursor: pointer;
   outline: none;
-  z-index: 1;
+  z-index: 21;
 
   @media (max-width: 400px) {
     
@@ -33,7 +33,7 @@ export const StyledHamburger = styled.button`
     transition: all 0.3s linear;
     transform-origin: 1px;
     background-color: ${({ open }) =>
-        open ? colors.pearl : colors.black};
+    open ? colors.red : colors.black};
 
     :first-child {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
