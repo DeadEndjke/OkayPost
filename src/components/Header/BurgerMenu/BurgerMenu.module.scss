@@ -1,0 +1,12 @@
+.burgermenu{
+   display: none;
+}
+
+@media screen and (max-width:1400px) {
+
+    .burgermenu{
+        display: block;
+        margin-left: 11px;
+    }
+    
+}

@@ -1,0 +1,25 @@
+.navbar{
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        li{
+            list-style: none;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 16px;
+            color: #1F2428;
+            &:not(:last-child){
+                margin-right: 40px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .navbar{
+        display: none;
+    }
+    
+}
