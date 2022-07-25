@@ -1,4 +1,3 @@
-import { SvgSelector } from '../../../../SvgSelector';
 import s from './Banner.module.scss'
 import banner from './../../../../assets/banner.png'
 

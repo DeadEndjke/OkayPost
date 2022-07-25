@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import s from './BurgerMenu.module.scss'
 import Hamburger from "../Hamburger/Hamburger";
-import { StyledMenu, StyledLink } from "./Menu.styled";
+import { StyledMenu } from "./Menu.styled";
 import { NavLink } from 'react-router-dom'
 
 
@@ -14,14 +14,14 @@ const Menu = () => {
         <div className={s.burgermenu}>
             <div ref={node}>
                 <StyledMenu open={open}>
-                    <NavLink to={'/howtopay'} > <StyledLink onClick={() => close()}>Как покупать</StyledLink></NavLink>
-                    <NavLink to={'/sale'} ><StyledLink onClick={() => close()}>Распродажи</StyledLink></NavLink>
-                    <NavLink to={'/prices'} ><StyledLink onClick={() => close()}>Цены</StyledLink></NavLink>
-                    <NavLink to={'/help'} ><StyledLink onClick={() => close()}>Помощь</StyledLink></NavLink>
-                    <NavLink to={'/bonus'} ><StyledLink onClick={() => close()}>Бонусы</StyledLink></NavLink>
-                    <NavLink to={'/blog'} ><StyledLink onClick={() => close()}>Блог</StyledLink></NavLink>
-                    <NavLink to={'/shops'} ><StyledLink onClick={() => close()}>Магазины</StyledLink></NavLink>
-                    <NavLink to={'/contactus'} ><StyledLink className={s.contactus} onClick={() => close()}>Связаться с нами</StyledLink></NavLink>
+                    <NavLink to={'/howtopay'} onClick={() => close()}>Как покупать</NavLink>
+                    <NavLink to={'/sale'} >Распродажи</NavLink>
+                    <NavLink to={'/prices'} >Цены</NavLink>
+                    <NavLink to={'/help'} >Помощь</NavLink>
+                    <NavLink to={'/bonus'} >Бонусы</NavLink>
+                    <NavLink to={'/blog'} >Блог</NavLink>
+                    <NavLink to={'/shops'} >Магазины</NavLink>
+                    <NavLink to={'/contactus'} >Связаться с нами</NavLink>
                 </StyledMenu>
                 <Hamburger open={open} setOpen={setOpen} />
             </div>
