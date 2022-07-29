@@ -1,4 +1,110 @@
-img{
-    width: 499px;
-    height: 475px;
+
+.page{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    .titleandruprice{
+        margin-top: 80px;
+        .title, .ruprice{
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 36px;
+            color: #1F2428;
+        }
+        .title{
+            text-align: start;
+            margin-bottom: 44px;
+        }
+        .ruprice{
+            background-color: #F2F6FC;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: row;
+            padding: 33px;
+            .rutitle{
+                display: flex;
+                flex-direction: column;
+                margin-left: 24px;
+                span{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #1F2428;
+                }
+            }
+        }
+    }
+    .titleandukprice{
+        margin-top: 80px;
+        .ukprice{
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 36px;
+            color: #01CD7D;
+        }
+        .title{
+            text-align: start;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 36px;
+            color: #1F2428;
+            margin-bottom: 44px;
+            span{
+                color: #01CD7D;
+            }
+        }
+        .ukprice{
+            background-color: #F2F6FC;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: row;
+            padding: 33px;
+            .uktitle{
+                display: flex;
+                flex-direction: column;
+                margin-left: 24px;
+                span{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #1F2428;
+                }
+            }
+        }
+    }
+    .ukprice{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 36px;
+        color: #01CD7D;
+    }
+    .img{
+        border-radius: 50%;
+        background-color: #F2F6FC;
+        img{
+            width: 499px;
+            height: 475px;
+        }
+    }
+ 
+}
+.bot{
+    margin-top: 33px;
+    .delivery{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #1F2428;
+    }
+    .economy{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 36px;
+        text-align: center;
+        color: #1F2428;
+        span{
+            color:#01CD7D
+        }
+    }
 }

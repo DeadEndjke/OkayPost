@@ -8,7 +8,7 @@ import { SvgSelector } from '../../../../../SvgSelector';
 const Bar = ({ handleChange, handlePrev, handleNext, value }) => {
 
 
-    useEffect(() => console.log(value))
+
 
     return (
         <div className={s.bar}>

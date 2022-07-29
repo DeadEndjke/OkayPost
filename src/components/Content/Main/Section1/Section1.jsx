@@ -1,5 +1,5 @@
 import Bar from './Bar/Bar';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import s from './Section1.module.scss'
 import ProductPage from './ProductPage/ProductPage';
 
@@ -23,6 +23,8 @@ const Section1 = () => {
             setValue(0)
         }
     }
+
+
     return (
         <div className={s.container}>
             <div className={s.section1}>

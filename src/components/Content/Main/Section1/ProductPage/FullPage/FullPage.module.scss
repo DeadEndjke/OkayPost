@@ -1,0 +1,10 @@
+.fullpage{
+    .current{
+        text-align: center;
+    }
+    .prevandnext{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
